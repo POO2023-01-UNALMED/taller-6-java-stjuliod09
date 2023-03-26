@@ -8,12 +8,13 @@ import java.util.Map;
 public class Fabricante {
     private String nombre;
     private Pais pais;
-    private int ventasFabrica;
+
     private static ArrayList<Fabricante> Fabricas = new ArrayList<Fabricante>(); 
 
     public Fabricante(String nombre, Pais pais) {
         this.nombre = nombre;
         this.pais = pais;
+        Fabricas.add(this);
     }
     public String getNombre() {
         return nombre;
@@ -27,15 +28,10 @@ public class Fabricante {
     public void setPais(Pais pais) {
         this.pais = pais;
     }
-    public int getVentasFabrica() {
-        return ventasFabrica;
-    }
-    public void setVentasFabrica(int ventasFabrica) {
-        this.ventasFabrica = ventasFabrica;
-    }
+
     
     public Fabricante fabricaMayorVentas(){
-        HashMap<String, Integer> frecuenciaElementos = new HashMap<>();
+        HashMap<String, Integer> frecuenciaElementos = new HashMap<String, Integer>();
 
         for (Fabricante fabrica:Fabricas){
             if (frecuenciaElementos.containsKey(fabrica.getNombre())) {
@@ -60,8 +56,6 @@ public class Fabricante {
                 return fabrica;
             }
         }
-
-        return null;
 
 
     }

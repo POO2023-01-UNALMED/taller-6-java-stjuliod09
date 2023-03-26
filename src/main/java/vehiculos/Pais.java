@@ -24,7 +24,7 @@ public class Pais {
 
     public static Pais paisMasVendedor(){
 
-        HashMap<String, Integer> frecuenciaElementos = new HashMap<>();
+        HashMap<String, Integer> frecuenciaElementos = new HashMap<String, Integer>();
 
         for (Pais pais:Paises){
             if (frecuenciaElementos.containsKey(pais.getNombre())) {
@@ -50,6 +50,7 @@ public class Pais {
             }
         }
 
+        return null;
 
  
 

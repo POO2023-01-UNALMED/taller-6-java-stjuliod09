@@ -8,8 +8,7 @@ import java.util.Map;
 public class Fabricante {
     private String nombre;
     private Pais pais;
-
-    private static ArrayList<Fabricante> Fabricas = new ArrayList<Fabricante>(); 
+    static ArrayList<Fabricante> Fabricas = new ArrayList<Fabricante>(); 
 
     public Fabricante(String nombre, Pais pais) {
         this.nombre = nombre;

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Pais {
     private String nombre;
-    private static ArrayList<Pais> Paises = new ArrayList<Pais>();
+    static ArrayList<Pais> Paises = new ArrayList<Pais>();
     
     public Pais(String nombre) {
         this.nombre = nombre;

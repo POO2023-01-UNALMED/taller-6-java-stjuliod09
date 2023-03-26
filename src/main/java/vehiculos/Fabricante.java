@@ -29,7 +29,7 @@ public class Fabricante {
     }
 
     
-    public Fabricante fabricaMayorVentas(){
+    public static Fabricante fabricaMayorVentas(){
         HashMap<String, Integer> frecuenciaElementos = new HashMap<String, Integer>();
 
         for (Fabricante fabrica:Fabricas){
@@ -55,8 +55,6 @@ public class Fabricante {
                 return fabrica;
             }
         }
-
-        return null;
 
     }
 
